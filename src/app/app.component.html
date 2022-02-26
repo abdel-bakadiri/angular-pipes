@@ -3,7 +3,7 @@
     <div class="card-body">
       <div class="row">
         <div class="col-12">
-          <div class="first-row">Builth in pipe demo</div>
+          <div class="first-row">Pipe demo</div>
           <div class="row">
             <div class="col-6">
               <div class="form-group">
@@ -80,8 +80,8 @@
               </div>
               <div class="info">
                 <div class="bold">Kilometers:</div>
-                <div class="holder-data" *ngIf="(milles | convertMilleToKm: "m") > 10">
-                  {{ milles | convertMilleToKm: "m" }}
+                <div class="holder-data" *ngIf="milles">
+                  {{ milles | convertMilleToKm: "km" }}
                 </div>
               </div>
             </div>
@@ -91,4 +91,3 @@
     </div>
   </div>
 </div>
-<div>{{ car | json }}</div>
