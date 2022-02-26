@@ -80,8 +80,8 @@
               </div>
               <div class="info">
                 <div class="bold">Kilometers:</div>
-                <div class="holder-data" *ngIf="milles">
-                  {{ milles | convertMilleToKm | number: "1.2-2" }}
+                <div class="holder-data" *ngIf="(milles | convertMilleToKm: "m") > 10">
+                  {{ milles | convertMilleToKm: "m" }}
                 </div>
               </div>
             </div>
